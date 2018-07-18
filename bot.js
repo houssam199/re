@@ -9,7 +9,7 @@ const queue = new Map();
 const client = new Discord.Client();
 
 
-const prefix = "w";
+const prefix = "R";
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
 	
@@ -555,9 +555,3 @@ client.on('ready', () => {
 
 
 client.login(process.env.BOT_TOKEN);
-
-
-client.on('ready', () => {
-client.user.setGame(`SAFARI
-`,"http://twitch.tv/S-F")
-});
